@@ -1,0 +1,89 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:  center;
+    background-image: linear-gradient(to right,rgb(17, 17, 54),rgb(23, 23, 87));
+}
+.heart{
+height: 200px;
+width: 200px;
+background: #f20044;
+position: relative;
+box-shadow: -10px 10px 90px #f20044;
+animation: heart 1.5s linear infinite;
+cursor: pointer;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+    
+}
+
+.heart:before{
+    content: '';
+    position:  absolute;
+    height: 200px;
+    width: 200px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 360px;
+    box-shadow: -10px -10px 90px#f20044;
+}
+.heart:after{
+    content: '';
+    position:  absolute;
+    height: 200px;
+    width: 200px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 360px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+.happy{
+    position: absolute;
+    font-size: 80px;
+    bottom: 700px;
+}
+.little{
+    position:absolute;
+    font-style:italic; 
+    top:650px;
+    font-size: 35px;
+    border: 3px solid deeppink;
+    border-radius: 360px;
+    padding: 20px 40px;
+    z-index: 1;
+}
+img{
+    position: absolute;
+    right: 140vh;
+    top: 20vh;
+    width: 50vh;
+    height: 50vh;
+    transform: rotateY(180deg) rotateZ(-10deg);
+}
+.i{
+    position: absolute;
+    left: 550px;
+    top: -100px;
+}
+.u{
+    position: absolute;
+    top: -200px;
+    right: 500px;
+
+}
+audio{
+    position: absolute;
+}
